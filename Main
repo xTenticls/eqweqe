@@ -1,8 +1,3 @@
--- // load
-
-repeat task.wait() until library and library.has_init
-
--- // variables
 -- globals
 local color3_new  = Color3.new
 local color3_rgb  = Color3.fromRGB
@@ -157,7 +152,7 @@ esp.define('player', {
     _visible = false,
     _connections = {},
     _properties = {
-        enabled = true,
+        enabled = false,
         dynamic = false,
         health = 0,
         maxhealth = 0,
